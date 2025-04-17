@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
               <p>All copyrights reserved</p>
             </div>
           </footer>
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
